@@ -8,7 +8,7 @@
     "tabs",
     "foldername"
   ],
-  "repository": "https://github.com/Erid/atom-tab-foldername-index",
+  "repository": "https://github.com/Erid/atom-tab-foldername-index-sbr",
   "license": "MIT",
   "engines": {
     "atom": ">=1.10.0"
