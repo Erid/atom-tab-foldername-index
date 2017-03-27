@@ -4,47 +4,45 @@
 // for a full listing of what's available.
 @import "ui-variables";
 
-.tab-foldername-index {
-    line-height: 13px;
-    padding: 0.3rem 1rem 0;
-    text-align: center;
-    width: 100%;
-
-    &__wrapper {
-        display: inline-block;
-        white-space: nowrap;
-        max-width: 100%;
-        text-align: left;
+.tab-bar {
+  .tab.foldername {
+    .title, &.active .title {
+      display: flex;
+      font-size: 0;
+      padding: 0 1rem;
     }
 
-    &__folder, &__file {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 100%;
+    .icon:before {
+      margin-top: 0.8rem;
     }
 
-    &__folder {
-        font-weight: bold;
-    }
+    .tab-foldername-index {
+        font-size: @font-size;
+        line-height: 13px;
+        padding-top: 0.3rem;
+        text-align: center;
 
-    &__original {
-        display: none!important;
-    }
+        &__wrapper {
+            display: inline-block;
+            white-space: nowrap;
+            max-width: 100%;
+            text-align: left;
+        }
 
-    .temp ~ & {
-        font-style: italic;
-    }
+        &__folder, &__file {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+        }
 
-    .status-added + & {
-        color: @syntax-color-added
-    }
+        &__folder {
+            font-weight: bold;
+        }
 
-    .status-modified + & {
-        color: @syntax-color-modified
+        .status-ignored + & {
+            font-weight: normal;
+            opacity: 0.6
+        }
     }
-
-    .status-ignored + & {
-        font-weight: normal;
-        opacity: 0.6
-    }
+  }
 }
