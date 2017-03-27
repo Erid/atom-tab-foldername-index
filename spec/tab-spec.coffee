@@ -22,7 +22,7 @@ createMochHTMLtab = ->
 
 $element = null
 
-describe "tab-foldername-index", ->
+describe "sub-tab-foldername-index", ->
   it "should init class Tab", ->
     tab = new Tab mochPaneInvalid
     expect(tab).toBeInstanceOf Tab

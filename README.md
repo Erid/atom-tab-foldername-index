@@ -1,7 +1,7 @@
 # Temporary Fork
 This is a temporary fork of `tab-foldername-index` package to use on our company for customized behavior (we expect to properly improve it and create a pull request)
 
-# tab-foldername-index package
+# sub-tab-foldername-index package
 
 ![tab with index.* filename](https://cloud.githubusercontent.com/assets/4091305/15377903/32cc2c1e-1d70-11e6-8ffc-4d6f8e8fa67f.png)
 

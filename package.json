@@ -2,7 +2,7 @@
   "name": "sub-tab-foldername-index",
   "main": "./lib/main",
   "version": "0.1.0",
-  "description": "Plugin replaces tab's title if opened index.* file for more readability",
+  "description": "Temporary change for plugin that replaces tab's title if opened index.* file for more readability",
   "keywords": [
     "index",
     "tabs",

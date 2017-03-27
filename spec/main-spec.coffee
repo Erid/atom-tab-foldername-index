@@ -123,7 +123,7 @@ describe "Tab-foldername-index main", ->
     waits 20
 
     runs ->
-      atom.commands.dispatch workspaceElement, "tab-foldername-index:toggle"
+      atom.commands.dispatch workspaceElement, "sub-tab-foldername-index:toggle"
       expectNotExist workspaceElement.querySelector ".#{pkg}",
         workspaceElement.querySelector ".#{pkg}__original"
 
@@ -133,7 +133,7 @@ describe "Tab-foldername-index main", ->
       .then ->
         atom.workspace.open "index.js"
       .then ->
-        atom.commands.dispatch workspaceElement, "tab-foldername-index:toggle"
+        atom.commands.dispatch workspaceElement, "sub-tab-foldername-index:toggle"
         atom.packages.disablePackage pkg
       .then ->
         atom.packages.activatePackage pkg
@@ -148,13 +148,13 @@ describe "Tab-foldername-index main", ->
     waitsForPromise ->
       atom.packages.activatePackage pkg
       .then ->
-        atom.commands.dispatch workspaceElement, "tab-foldername-index:toggle"
+        atom.commands.dispatch workspaceElement, "sub-tab-foldername-index:toggle"
         atom.workspace.open "index.js"
 
     waits 20
 
     runs ->
-      atom.commands.dispatch workspaceElement, "tab-foldername-index:toggle"
+      atom.commands.dispatch workspaceElement, "sub-tab-foldername-index:toggle"
       expectExist workspaceElement.querySelector ".#{pkg}",
         workspaceElement.querySelector ".#{pkg}__original"
 

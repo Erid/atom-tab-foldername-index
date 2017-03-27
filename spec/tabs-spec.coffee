@@ -1,7 +1,7 @@
 Tabs = require "../lib/main"
 {expectNotExist, expectExist} = require "./tools"
 
-describe "tab-foldername-index module", ->
+describe "sub-tab-foldername-index module", ->
   pkgModule = null
 
   beforeEach ->
